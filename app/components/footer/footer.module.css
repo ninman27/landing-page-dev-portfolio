@@ -1,0 +1,45 @@
+.container {
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3.75rem;
+  gap: clamp(2.25rem, 2.7386rem + -1.018vw, 2.5rem);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.container hr {
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: -0.44px;
+}
+
+.iconContainer {
+  display: flex;
+  gap: clamp(1.5rem, 1.02281rem + 2.036vw, 2rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    gap: clamp(2.25rem, 1.39272rem + 1.786vw, 3rem);
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}

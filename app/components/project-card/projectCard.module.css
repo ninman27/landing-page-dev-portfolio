@@ -1,0 +1,58 @@
+.cardContainer h3 {
+  margin-top: 1.25rem;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: clamp(21.5625rem, 17.27109rem + 18.31vw, 33.75rem);
+  height: clamp(15.8125rem, 12.57742rem + 13.803vw, 25rem);
+}
+
+.overlay {
+  display: none;
+}
+
+.tech {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 1.25rem;
+  gap: 1.125rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.75rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .image {
+    z-index: -1;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .hoverButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .overlay {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+  }
+
+  .cardContainer:hover .overlay {
+    opacity: 0.75;
+  }
+}

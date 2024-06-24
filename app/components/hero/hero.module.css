@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.textContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.textContainer p {
+  margin-top: clamp(1.5rem, -0.64688rem + 9.16vw, 3.75rem);
+  margin-bottom: clamp(1.5rem, 0.78445rem + 3.053vw, 2.25rem);
+}
+
+.underline {
+  text-decoration-color: #4ee1a0;
+  text-decoration-line: underline;
+  text-decoration-thickness: clamp(0.25rem, 0.20594rem + 0.188vw, 0.375rem);
+  text-underline-offset: 0.75rem;
+}
+
+.image {
+  width: clamp(11rem, 2.41227rem + 36.641vw, 20rem);
+  height: auto;
+  margin-top: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin-top: clamp(5.75rem, 4.95781rem + 3.38vw, 8rem);
+    align-items: flex-start;
+  }
+
+  .textContainer {
+    width: clamp(25rem, 2.14288rem + 47.619vw, 45rem);
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .textContainer p {
+    width: 63%;
+    margin-top: clamp(3rem, 4.60728rem + -1.786vw, 3.75rem);
+    margin-bottom: clamp(2.25rem, -0.03576rem + 4.762vw, 4.25rem);
+  }
+
+  .underline {
+    text-underline-offset: 1.25rem;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: clamp(0rem, -11.7144rem + 24.405vw, 10.25rem);
+    margin-top: 0;
+    width: clamp(20rem, 10.85696rem + 19.048vw, 28rem);
+    z-index: -1;
+  }
+}

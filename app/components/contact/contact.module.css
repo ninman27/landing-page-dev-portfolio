@@ -1,0 +1,88 @@
+.container {
+  background-color: #242424;
+  margin-top: 80px;
+  padding-top: clamp(3.75rem, 3.75rem + 0vw, 3.75rem);
+  padding-inline: clamp(1rem, -7.58773rem + 36.641vw, 10rem);
+  padding-bottom: clamp(5.5rem, 5.26141rem + 1.018vw, 5.75rem);
+  text-align: center;
+}
+
+.textContainer h1 {
+  margin-bottom: 1.25rem;
+}
+
+.textContainer p {
+  margin-bottom: 3.25rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form input,
+.form textarea {
+  background-color: #242424;
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0rem 1.5rem 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid white;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  line-height: 1.625rem;
+  letter-spacing: -0.22px;
+}
+
+.form textarea {
+  height: 6.75rem;
+}
+
+.button {
+  background-color: #242424;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 0rem 0.125rem 0.625rem 0rem;
+  border-bottom: 2px solid #4ee1a0;
+  font-size: 1rem !important;
+  font-weight: 700;
+  font-family: inherit !important;
+  line-height: 1.625rem;
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  color: #4ee1a0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-top: clamp(3.75rem, 2.03592rem + 3.571vw, 5.25rem);
+  }
+
+  .textContainer h1 {
+    margin-bottom: clamp(1.25rem, 0.10712rem + 2.381vw, 2.25rem);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .textContainer {
+    width: 40%;
+    text-align: left;
+  }
+
+  .formContainer {
+    width: 40%;
+  }
+}
